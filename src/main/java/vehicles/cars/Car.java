@@ -1,7 +1,7 @@
 package main.java.vehicles.cars;
 
-import main.java.vehicles.components.Calculator;
-import main.java.vehicles.components.Engine;
+import main.java.vehicles.components.Utils;
+import main.java.vehicles.components.carComponents.EngineImpl;
 
 public class Car {
 
@@ -21,7 +21,7 @@ public class Car {
     public Car(int maxPossibleSpeed, double currentSpeed, int seatHeight, String engine) {
         initializeSpeeds(maxPossibleSpeed, currentSpeed);
         this.seatHeight = seatHeight;
-        Engine.engine = engine;
+        EngineImpl.engine = engine;
     }
 
     private void initializeSpeeds(int maxPossibleSpeed, double currentSpeed) {
@@ -35,7 +35,7 @@ public class Car {
 
     private void applyBreakAndContinue(int acceleration, int decrement) {
         setCurrentSpeed(getCurrentSpeed() - decrement);
-        setCurrentSpeed(getCurrentSpeed() + acceleration + Calculator.doCalculations());
+        setCurrentSpeed(getCurrentSpeed() + acceleration + Utils.doCalculations());
     }
 
 }

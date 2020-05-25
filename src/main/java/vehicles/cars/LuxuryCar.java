@@ -1,6 +1,6 @@
 package main.java.vehicles.cars;
 
-import main.java.vehicles.components.Engine;
+import main.java.vehicles.components.carComponents.EngineImpl;
 
 public class LuxuryCar extends Car {
 
@@ -9,25 +9,25 @@ public class LuxuryCar extends Car {
     public String toString() {
         return getString() +
                 ", noOfSeats=" + noOfSeats +
-                ", engine='" + Engine.engine + '\'' +
+                ", engine='" + EngineImpl.engine + '\'' +
                 '}';
     }
 
     private String getString() {
         return "LuxuryCar{" +
-                "panoramicSunroof=" + Engine.turbo;
+                "panoramicSunroof=" + EngineImpl.turbo;
     }
 
     @SuppressWarnings("checkstyle:executablestatementcount")
     public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed,
                      int seatHeight, String engine, boolean panoramicSunroof) {
         super(maxSpeed, currentSpeed, seatHeight, engine);
-        Engine.turbo = panoramicSunroof;
+        EngineImpl.turbo = panoramicSunroof;
         this.noOfSeats = noOfSeats;
     }
 
     public boolean isPanoramicSunroof() {
-        return Engine.turbo;
+        return EngineImpl.turbo;
     }
 
 

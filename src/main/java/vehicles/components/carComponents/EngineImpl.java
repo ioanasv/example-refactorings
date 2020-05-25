@@ -1,12 +1,12 @@
-package main.java.vehicles.components;
+package main.java.vehicles.components.carComponents;
 
-public class Engine {
+public class EngineImpl implements Engine{
 
     public static String engine;
     public static boolean turbo;
     private String name;
 
-    public Engine(String name) {
+    public EngineImpl(String name) {
         this.name = name;
     }
 

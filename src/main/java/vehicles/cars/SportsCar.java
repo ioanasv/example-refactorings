@@ -1,6 +1,6 @@
 package main.java.vehicles.cars;
 
-import main.java.vehicles.components.Engine;
+import main.java.vehicles.components.carComponents.EngineImpl;
 
 public class SportsCar extends Car{
 
@@ -13,10 +13,10 @@ public class SportsCar extends Car{
     }
 
     public void setEngine(String engine) {
-        Engine.engine = engine;
+        EngineImpl.engine = engine;
     }
 
     public String getEngine() {
-        return Engine.engine;
+        return EngineImpl.engine;
     }
 }
