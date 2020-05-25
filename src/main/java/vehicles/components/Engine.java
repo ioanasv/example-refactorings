@@ -10,12 +10,6 @@ public class Engine {
         this.name = name;
     }
 
-    public static Integer doCalc() {
-        Integer temp = 10;
-        temp *= 3;
-        return temp;
-    }
-
     public String getName() {
         return name;
     }

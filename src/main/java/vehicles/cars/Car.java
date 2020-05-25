@@ -1,5 +1,6 @@
 package main.java.vehicles.cars;
 
+import main.java.vehicles.components.Calculator;
 import main.java.vehicles.components.Engine;
 
 public class Car {
@@ -34,7 +35,7 @@ public class Car {
 
     private void applyBreakAndContinue(int acceleration, int decrement) {
         setCurrentSpeed(getCurrentSpeed() - decrement);
-        setCurrentSpeed(getCurrentSpeed() + acceleration + Engine.doCalc());
+        setCurrentSpeed(getCurrentSpeed() + acceleration + Calculator.doCalculations());
     }
 
 }
