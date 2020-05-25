@@ -9,7 +9,10 @@ public class Utils {
     }
 
     public void parseString(String string) {
-        boolean res = string.toLowerCase().contains("abc") && string.lastIndexOf(".") > 5 && string.endsWith("z");
+        final boolean abc = string.toLowerCase().contains("abc");
+        final boolean b = string.lastIndexOf(".") > 5;
+        final boolean z = string.endsWith("z");
+        boolean res = abc && b && z;
         if (res) {
             string = string.replace("x.x", "");
         } else {
