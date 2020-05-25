@@ -20,10 +20,10 @@ public class Utils {
     }
 
     public static void print(int height, int width) {
-        double temp = 2 * (height + width);
-        System.out.println(temp);
-        temp = height * width;
-        System.out.println(temp);
+        final double perimeter = 2 * (height + width);
+        System.out.println(perimeter);
+        final double area = height * width;
+        System.out.println(area);
     }
 
 }
