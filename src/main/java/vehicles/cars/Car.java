@@ -5,16 +5,24 @@ import main.java.vehicles.components.carComponents.EngineImpl;
 
 public class Car extends Vehicle{
 
+    private final Speed speed = new Speed();
+
     public double getCurrentSpeed() {
-        return currentSpeed;
+        return speed.getCurrentSpeed();
     }
 
     public void setCurrentSpeed(double currentSpeed) {
-        this.currentSpeed = currentSpeed;
+        speed.setCurrentSpeed(currentSpeed);
     }
 
-    private int maxPossibleSpeed;
-    private double currentSpeed;
+    public int getMaxPossibleSpeed() {
+        return speed.getMaxPossibleSpeed();
+    }
+
+    public void setMaxPossibleSpeed(int maxPossibleSpeed) {
+        speed.setMaxPossibleSpeed(maxPossibleSpeed);
+    }
+
     private int seatHeight;
 
 
@@ -25,17 +33,17 @@ public class Car extends Vehicle{
     }
 
     private void initializeSpeeds(int maxPossibleSpeed, double currentSpeed) {
-        this.maxPossibleSpeed = maxPossibleSpeed;
-        this.currentSpeed = currentSpeed;
+        this.speed.setMaxPossibleSpeed(maxPossibleSpeed);
+        this.speed.setCurrentSpeed(currentSpeed);
     }
 
     private void doubleSpeed() {
-        this.currentSpeed *= 2;
+        this.speed.setCurrentSpeed(this.speed.getCurrentSpeed() * 2);
     }
 
     private void applyBreakAndContinue(int acceleration, int decrement) {
-        setCurrentSpeed(getCurrentSpeed() - decrement);
-        setCurrentSpeed(getCurrentSpeed() + acceleration + Utils.doCalculations());
+        speed.setCurrentSpeed(speed.getCurrentSpeed() - decrement);
+        speed.setCurrentSpeed(speed.getCurrentSpeed() + acceleration + Utils.doCalculations());
     }
 
 }
