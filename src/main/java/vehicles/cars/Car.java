@@ -18,10 +18,14 @@ public class Car {
 
 
     public Car(int maxPossibleSpeed, double currentSpeed, int seatHeight, String engine) {
-        this.maxPossibleSpeed = maxPossibleSpeed;
-        this.currentSpeed = currentSpeed;
+        initializeSpeeds(maxPossibleSpeed, currentSpeed);
         this.seatHeight = seatHeight;
         Engine.engine = engine;
+    }
+
+    private void initializeSpeeds(int maxPossibleSpeed, double currentSpeed) {
+        this.maxPossibleSpeed = maxPossibleSpeed;
+        this.currentSpeed = currentSpeed;
     }
 
     private void doubleSpeed() {
