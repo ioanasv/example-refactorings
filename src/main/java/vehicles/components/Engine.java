@@ -1,4 +1,4 @@
-package main.java.vehicles.misc;
+package main.java.vehicles.components;
 
 public class Engine {
 
@@ -10,10 +10,10 @@ public class Engine {
         this.name = name;
     }
 
-    public static int doCalc() {
-        int dummy = 10;
-        dummy *= 3;
-        return dummy;
+    public static Integer doCalc() {
+        Integer temp = 10;
+        temp *= 3;
+        return temp;
     }
 
     public String getName() {
