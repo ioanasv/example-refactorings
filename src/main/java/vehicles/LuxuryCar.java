@@ -1,4 +1,4 @@
-package main.java;
+package main.java.vehicles;
 
 public class LuxuryCar extends Car {
 
