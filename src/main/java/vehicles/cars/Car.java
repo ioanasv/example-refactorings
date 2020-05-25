@@ -3,7 +3,7 @@ package main.java.vehicles.cars;
 import main.java.vehicles.components.Utils;
 import main.java.vehicles.components.carComponents.EngineImpl;
 
-public class Car {
+public class Car extends Vehicle{
 
     public double getCurrentSpeed() {
         return currentSpeed;
