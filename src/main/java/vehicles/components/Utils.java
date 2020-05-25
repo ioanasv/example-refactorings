@@ -12,12 +12,18 @@ public class Utils {
         final boolean abc = string.toLowerCase().contains("abc");
         final boolean b = string.lastIndexOf(".") > 5;
         final boolean z = string.endsWith("z");
-        boolean res = abc && b && z;
-        if (res) {
+        if (abc && b && z) {
             string = string.replace("x.x", "");
         } else {
             return;
         }
+    }
+
+    public static void print(int height, int width) {
+        double temp = 2 * (height + width);
+        System.out.println(temp);
+        temp = height * width;
+        System.out.println(temp);
     }
 
 }
