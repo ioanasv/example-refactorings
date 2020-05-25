@@ -2,7 +2,6 @@ package main.java;
 
 public class LuxuryCar extends Car {
 
-    static boolean panoramicSunroof;
     private int noOfSeats;
 
     public String toString() {
@@ -14,19 +13,19 @@ public class LuxuryCar extends Car {
 
     private String getString() {
         return "LuxuryCar{" +
-                "panoramicSunroof=" + panoramicSunroof;
+                "panoramicSunroof=" + Engine.turbo;
     }
 
     @SuppressWarnings("checkstyle:executablestatementcount")
     public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed,
                      int seatHeight, String engine, boolean panoramicSunroof) {
         super(maxSpeed, currentSpeed, seatHeight, engine);
-        this.panoramicSunroof = panoramicSunroof;
+        Engine.turbo = panoramicSunroof;
         this.noOfSeats = noOfSeats;
     }
 
     public boolean isPanoramicSunroof() {
-        return panoramicSunroof;
+        return Engine.turbo;
     }
 
 

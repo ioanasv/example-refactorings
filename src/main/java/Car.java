@@ -31,4 +31,10 @@ public class Car {
         double speedAfterBreak = getCurrentSpeed();
         setCurrentSpeed(speedAfterBreak + acceleration);
     }
+
+    public static int doCalc() {
+        int dummy = 10;
+        dummy *= 3;
+        return dummy;
+    }
 }
