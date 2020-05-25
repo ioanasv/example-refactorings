@@ -1,4 +1,6 @@
-package main.java.vehicles;
+package main.java.vehicles.cars;
+
+import main.java.vehicles.misc.Engine;
 
 public class Car {
 
@@ -29,12 +31,7 @@ public class Car {
     private void applyBreakAndContinue(int acceleration, int decrement) {
         setCurrentSpeed(getCurrentSpeed() - decrement);
         double speedAfterBreak = getCurrentSpeed();
-        setCurrentSpeed(speedAfterBreak + acceleration + doCalc());
+        setCurrentSpeed(speedAfterBreak + acceleration + Engine.doCalc());
     }
 
-    public static int doCalc() {
-        int dummy = 10;
-        dummy *= 3;
-        return dummy;
-    }
 }

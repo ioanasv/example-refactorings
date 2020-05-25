@@ -1,4 +1,6 @@
-package main.java.vehicles;
+package main.java.vehicles.cars;
+
+import main.java.vehicles.misc.Engine;
 
 public class LuxuryCar extends Car {
 
