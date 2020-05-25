@@ -3,23 +3,25 @@ package main.java;
 public class LuxuryCar extends Car {
 
     boolean panoramicSunroof;
+    private int noOfSeats;
 
-    public LuxuryCar(int noOfSeats, int maxSpeed, int currentSpeed, int seatHeight, boolean panoramicSunroof) {
-        super(noOfSeats, maxSpeed, currentSpeed, seatHeight);
+    public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed, int seatHeight, boolean panoramicSunroof) {
+        super(maxSpeed, currentSpeed, seatHeight);
         this.panoramicSunroof = panoramicSunroof;
+        this.noOfSeats = noOfSeats;
     }
 
     public boolean isPanoramicSunroof() {
         return panoramicSunroof;
     }
 
-    private int applyBreak(int decrement) {
+    private double applyBreak(int decrement) {
         setCurrentSpeed(getCurrentSpeed() - decrement);
         return getCurrentSpeed();
     }
 
     private void applyBreakAndContinue(int acceleration, int decrement) {
-        int speedAfterBreak = applyBreak(decrement);
+        double speedAfterBreak = applyBreak(decrement);
         setCurrentSpeed(speedAfterBreak + acceleration);
     }
 }

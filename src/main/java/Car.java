@@ -2,24 +2,21 @@ package main.java;
 
 public class Car {
 
-    private int noOfSeats;
-
-    public int getCurrentSpeed() {
+    public double getCurrentSpeed() {
         return currentSpeed;
     }
 
-    public void setCurrentSpeed(int currentSpeed) {
+    public void setCurrentSpeed(double currentSpeed) {
         this.currentSpeed = currentSpeed;
     }
 
-    private int maxSpeed;
-    private int currentSpeed;
+    private int maxPossibleSpeed;
+    private double currentSpeed;
     private int seatHeight;
 
 
-    public Car(int noOfSeats, int maxSpeed, int currentSpeed, int seatHeight) {
-        this.noOfSeats = noOfSeats;
-        this.maxSpeed = maxSpeed;
+    public Car(int maxPossibleSpeed, double currentSpeed, int seatHeight) {
+        this.maxPossibleSpeed = maxPossibleSpeed;
         this.currentSpeed = currentSpeed;
         this.seatHeight = seatHeight;
     }
