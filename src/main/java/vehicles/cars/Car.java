@@ -30,8 +30,7 @@ public class Car {
 
     private void applyBreakAndContinue(int acceleration, int decrement) {
         setCurrentSpeed(getCurrentSpeed() - decrement);
-        double speedAfterBreak = getCurrentSpeed();
-        setCurrentSpeed(speedAfterBreak + acceleration + Engine.doCalc());
+        setCurrentSpeed(getCurrentSpeed() + acceleration + Engine.doCalc());
     }
 
 }
