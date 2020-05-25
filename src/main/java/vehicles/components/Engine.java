@@ -10,6 +10,12 @@ public class Engine {
         this.name = name;
     }
 
+    static Integer getInteger() {
+        Integer temp = 10;
+        temp *= 3;
+        return temp;
+    }
+
     public String getName() {
         return name;
     }
