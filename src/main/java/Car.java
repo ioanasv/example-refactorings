@@ -2,7 +2,7 @@ package main.java;
 
 public class Car {
 
-    protected String engine;
+    protected static String engine;
 
     public double getCurrentSpeed() {
         return currentSpeed;

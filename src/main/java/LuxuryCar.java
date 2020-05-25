@@ -5,7 +5,6 @@ public class LuxuryCar extends Car {
     boolean panoramicSunroof;
     private int noOfSeats;
 
-    @Override
     public String toString() {
         return getString() +
                 ", noOfSeats=" + noOfSeats +
@@ -18,6 +17,7 @@ public class LuxuryCar extends Car {
                 "panoramicSunroof=" + panoramicSunroof;
     }
 
+    @SuppressWarnings("checkstyle:methodlength")
     public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed,
                      int seatHeight, String engine, boolean panoramicSunroof) {
         super(maxSpeed, currentSpeed, seatHeight, engine);
@@ -30,13 +30,9 @@ public class LuxuryCar extends Car {
     }
 
 
-    private double applyBreak(int decrement) {
+    private void applyBreakAndContinue(int acceleration, int decrement) {
         setCurrentSpeed(getCurrentSpeed() - decrement);
-        return getCurrentSpeed();
-    }
-
-    private void applyBreakAndAccelerate(int acceleration, int decrement) {
-        double speedAfterBreak = applyBreak(decrement);
+        double speedAfterBreak = getCurrentSpeed();
         setCurrentSpeed(speedAfterBreak + acceleration);
     }
 }
