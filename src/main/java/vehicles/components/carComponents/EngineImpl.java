@@ -10,7 +10,7 @@ public class EngineImpl implements Engine{
         this.name = name;
     }
 
-    static Integer getInteger() {
+    public static Integer getInteger() {
         Integer temp = 10;
         temp *= 3;
         return temp;

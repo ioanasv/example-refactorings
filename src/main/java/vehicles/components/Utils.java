@@ -8,4 +8,13 @@ public class Utils {
         return temp;
     }
 
+    public void parseString(String string) {
+        if (string.toLowerCase().contains("abc")
+                && string.lastIndexOf(".") > 5 && string.endsWith("z")) {
+            string = string.replace("x.x", "");
+        } else {
+            return;
+        }
+    }
+
 }
