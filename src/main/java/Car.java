@@ -2,6 +2,8 @@ package main.java;
 
 public class Car {
 
+    protected String engine;
+
     public double getCurrentSpeed() {
         return currentSpeed;
     }
@@ -15,9 +17,10 @@ public class Car {
     private int seatHeight;
 
 
-    public Car(int maxPossibleSpeed, double currentSpeed, int seatHeight) {
+    public Car(int maxPossibleSpeed, double currentSpeed, int seatHeight, String engine) {
         this.maxPossibleSpeed = maxPossibleSpeed;
         this.currentSpeed = currentSpeed;
         this.seatHeight = seatHeight;
+        this.engine = engine;
     }
 }

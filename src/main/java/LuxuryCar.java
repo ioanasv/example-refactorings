@@ -5,8 +5,17 @@ public class LuxuryCar extends Car {
     boolean panoramicSunroof;
     private int noOfSeats;
 
-    public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed, int seatHeight, boolean panoramicSunroof) {
-        super(maxSpeed, currentSpeed, seatHeight);
+    public String toString() {
+        return "LuxuryCar{" +
+                "panoramicSunroof=" + panoramicSunroof +
+                ", noOfSeats=" + noOfSeats +
+                ", engine='" + engine + '\'' +
+                '}';
+    }
+
+    public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed,
+                     int seatHeight, String engine, boolean panoramicSunroof) {
+        super(maxSpeed, currentSpeed, seatHeight, engine);
         this.panoramicSunroof = panoramicSunroof;
         this.noOfSeats = noOfSeats;
     }
@@ -14,6 +23,7 @@ public class LuxuryCar extends Car {
     public boolean isPanoramicSunroof() {
         return panoramicSunroof;
     }
+
 
     private double applyBreak(int decrement) {
         setCurrentSpeed(getCurrentSpeed() - decrement);
