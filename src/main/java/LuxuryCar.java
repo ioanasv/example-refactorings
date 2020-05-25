@@ -2,13 +2,13 @@ package main.java;
 
 public class LuxuryCar extends Car {
 
-    boolean panoramicSunroof;
+    static boolean panoramicSunroof;
     private int noOfSeats;
 
     public String toString() {
         return getString() +
                 ", noOfSeats=" + noOfSeats +
-                ", engine='" + engine + '\'' +
+                ", engine='" + Engine.engine + '\'' +
                 '}';
     }
 
@@ -17,7 +17,7 @@ public class LuxuryCar extends Car {
                 "panoramicSunroof=" + panoramicSunroof;
     }
 
-    @SuppressWarnings("checkstyle:methodlength")
+    @SuppressWarnings("checkstyle:executablestatementcount")
     public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed,
                      int seatHeight, String engine, boolean panoramicSunroof) {
         super(maxSpeed, currentSpeed, seatHeight, engine);
@@ -30,9 +30,4 @@ public class LuxuryCar extends Car {
     }
 
 
-    private void applyBreakAndContinue(int acceleration, int decrement) {
-        setCurrentSpeed(getCurrentSpeed() - decrement);
-        double speedAfterBreak = getCurrentSpeed();
-        setCurrentSpeed(speedAfterBreak + acceleration);
-    }
 }

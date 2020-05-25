@@ -2,8 +2,6 @@ package main.java;
 
 public class Car {
 
-    protected static String engine;
-
     public double getCurrentSpeed() {
         return currentSpeed;
     }
@@ -21,6 +19,16 @@ public class Car {
         this.maxPossibleSpeed = maxPossibleSpeed;
         this.currentSpeed = currentSpeed;
         this.seatHeight = seatHeight;
-        this.engine = engine;
+        Engine.engine = engine;
+    }
+
+    private void doubleSpeed() {
+        this.currentSpeed *= 2;
+    }
+
+    private void applyBreakAndContinue(int acceleration, int decrement) {
+        setCurrentSpeed(getCurrentSpeed() - decrement);
+        double speedAfterBreak = getCurrentSpeed();
+        setCurrentSpeed(speedAfterBreak + acceleration);
     }
 }

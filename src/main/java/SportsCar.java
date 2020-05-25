@@ -11,10 +11,10 @@ public class SportsCar extends Car{
     }
 
     public void setEngine(String engine) {
-        this.engine = engine;
+        Engine.engine = engine;
     }
 
     public String getEngine() {
-        return engine;
+        return Engine.engine;
     }
 }
