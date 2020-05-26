@@ -8,11 +8,10 @@ public class Utils {
         return temp;
     }
 
-    public void parseString(String string) {
-        final boolean abc = string.toLowerCase().contains("abc");
-        final boolean b = string.lastIndexOf(".") > 5;
-        final boolean z = string.endsWith("z");
-        if (abc && b && z) {
+    public static void parseString(String string) {
+        boolean result = string.toLowerCase().contains("abc") && string.lastIndexOf(".") > 5
+                && string.endsWith("z");
+        if (result) {
             string = string.replace("x.x", "");
         } else {
             return;
