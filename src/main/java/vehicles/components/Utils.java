@@ -1,17 +1,18 @@
 package main.java.vehicles.components;
 
-import main.java.vehicles.components.carComponents.EngineImpl;
-
 public class Utils {
-    public static Integer doCalculations() {
-        Integer temp = EngineImpl.getInteger();
-        return temp;
-    }
+
+    private static boolean abc;
+    private static boolean b;
+    private static boolean z;
 
     public static void parseString(String string) {
-        boolean abc = string.toLowerCase().contains("abc");
-        boolean b = string.lastIndexOf(".") > 5;
-        boolean z = string.endsWith("z");
+        Utils.abc = string.toLowerCase().contains("abc");
+        boolean abc = Utils.abc;
+        Utils.b = string.lastIndexOf(".") > 5;
+        boolean b = Utils.b;
+        Utils.z = string.endsWith("z");
+        boolean z = Utils.z;
         boolean result = abc && b && z;
         if (result) {
             string = string.replace("x.x", "");
