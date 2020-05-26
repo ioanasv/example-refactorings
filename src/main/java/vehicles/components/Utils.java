@@ -2,13 +2,12 @@ package main.java.vehicles.components;
 
 public class Utils {
 
-    private static boolean abc;
     private static boolean b;
     private static boolean z;
 
     public static void parseString(String string) {
-        Utils.abc = string.toLowerCase().contains("abc");
-        boolean abc = Utils.abc;
+        Result.abc = string.toLowerCase().contains("abc");
+        boolean abc = Result.abc;
         Utils.b = string.lastIndexOf(".") > 5;
         boolean b = Utils.b;
         Utils.z = string.endsWith("z");
