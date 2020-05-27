@@ -1,6 +1,6 @@
 package main.java.vehicles.cars;
 
-import main.java.vehicles.components.Utils;
+import main.java.vehicles.components.Calculator;
 import main.java.vehicles.components.carComponents.EngineImpl;
 
 public class Car extends Vehicle {
@@ -37,13 +37,9 @@ public class Car extends Vehicle {
         this.getSpeed().setCurrentSpeed(currentSpeed);
     }
 
-    private void doubleSpeed() {
-        this.getSpeed().setCurrentSpeed(this.getSpeed().getCurrentSpeed() * 2);
-    }
-
     private void applyBreakAndContinue(int acceleration, int decrement) {
         getSpeed().setCurrentSpeed(getSpeed().getCurrentSpeed() - decrement);
-        getSpeed().setCurrentSpeed(getSpeed().getCurrentSpeed() + acceleration + Utils.doCalculations());
+        getSpeed().setCurrentSpeed(getSpeed().getCurrentSpeed() + acceleration + Calculator.doCalculations());
     }
 
     public Speed getSpeed() {

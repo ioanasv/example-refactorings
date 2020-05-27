@@ -7,7 +7,8 @@ public class LuxuryCar extends Car {
     private int noOfSeats;
 
     public String toString() {
-        return getString() +
+        final String string = getString();
+        return string +
                 ", noOfSeats=" + noOfSeats +
                 ", engine='" + EngineImpl.engine + '\'' +
                 '}';
@@ -31,4 +32,7 @@ public class LuxuryCar extends Car {
     }
 
 
+    private void doubleSpeed() {
+        this.getSpeed().setCurrentSpeed(this.getSpeed().getCurrentSpeed() * 2);
+    }
 }
