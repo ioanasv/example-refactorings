@@ -4,7 +4,6 @@ public abstract class Bird {
 
     private String type;
     boolean isNailed;
-    int numberOfCoconuts = 10;
 
     public Bird(String type, boolean isNailed) {
         this.type = type;
