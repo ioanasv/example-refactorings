@@ -19,4 +19,8 @@ public class SportsCar extends Car{
     public String getEngine() {
         return EngineImpl.engine;
     }
+
+    private void doubleSpeed() {
+        this.getSpeed().setCurrentSpeed(this.getSpeed().getCurrentSpeed() * 2);
+    }
 }

@@ -37,10 +37,6 @@ public class Car extends Vehicle {
         this.getSpeed().setCurrentSpeed(currentSpeed);
     }
 
-    private void doubleSpeed() {
-        this.getSpeed().setCurrentSpeed(this.getSpeed().getCurrentSpeed() * 2);
-    }
-
     private void applyBreakAndContinue(int acceleration, int decrement) {
         getSpeed().setCurrentSpeed(getSpeed().getCurrentSpeed() - decrement);
         getSpeed().setCurrentSpeed(getSpeed().getCurrentSpeed() + acceleration + Calculator.doCalculations());
