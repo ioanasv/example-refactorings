@@ -4,6 +4,7 @@ public abstract class Bird {
 
     private String type;
     boolean isNailed;
+    private double baseSpeed = 15.2;
 
     public Bird(String type, boolean isNailed) {
         this.type = type;
@@ -13,7 +14,7 @@ public abstract class Bird {
     public abstract double getSpeed();
 
     double getBaseSpeed() {
-        return 15.2;
+        return baseSpeed;
    }
 
     double getLoadFactor() {
