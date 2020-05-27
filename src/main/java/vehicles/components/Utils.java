@@ -19,8 +19,7 @@ public class Utils {
         }
     }
 
-    public static void print(int height, int width) {
-        final double perimeter = 2 * (height + width);
+    public static void print(int height, int width, double perimeter) {
         System.out.println(perimeter);
         final double area = height * width;
         System.out.println(area);
