@@ -1,8 +1,10 @@
 package main.java.vehicles.components.carComponents;
 
+@Deprecated
 public class EngineImpl implements Engine{
 
     public static String engine;
+    @SuppressWarnings("checkstyle:1")
     public static boolean turbo;
     private String name;
 
