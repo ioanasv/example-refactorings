@@ -1,9 +1,9 @@
 package main.java.vehicles.components.carComponents;
 
+@SuppressWarnings("checkstyle:0")
 public class EngineImpl implements Engine{
 
     public static String engine;
-    @SuppressWarnings("checkstyle:2")
     public static boolean turbo;
     private String name;
 

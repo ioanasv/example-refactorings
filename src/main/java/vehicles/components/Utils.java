@@ -4,7 +4,8 @@ public class Utils {
 
     private static boolean z;
 
-    public static void parseString(String string) {
+    public static void parseString() {
+        String string = "randomabc";
         Result.abc = string.toLowerCase().contains("abc");
         boolean abc = Result.abc;
         Result.aBoolean = string.lastIndexOf(".") > 5;
