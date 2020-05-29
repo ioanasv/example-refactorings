@@ -1,6 +1,6 @@
 package main.java.vehicles.components.carComponents;
 
-@SuppressWarnings("checkstyle:0")
+@SuppressWarnings("checkstyle:1")
 public class EngineImpl implements Engine{
 
     public static String engine;
