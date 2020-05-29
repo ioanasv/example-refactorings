@@ -1,6 +1,5 @@
 package main.java.vehicles.components.carComponents;
 
-@Deprecated
 public class EngineImpl implements Engine{
 
     public static String engine;
