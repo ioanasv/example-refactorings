@@ -4,7 +4,7 @@ package main.java.vehicles.components.carComponents;
 public class EngineImpl implements Engine{
 
     public static String engine;
-    @SuppressWarnings("checkstyle:1")
+    @SuppressWarnings("checkstyle:2")
     public static boolean turbo;
     private String name;
 
