@@ -20,7 +20,7 @@ public class LuxuryCar extends Car {
     }
 
     @SuppressWarnings("checkstyle:executablestatementcount")
-    public LuxuryCar(int noOfSeats, int maxSpeed, double currentSpeed,
+    public LuxuryCar(int maxSpeed, int noOfSeats, double currentSpeed,
                      int seatHeight, String engine, boolean panoramicSunroof) {
         super(maxSpeed, currentSpeed, seatHeight, engine);
         EngineImpl.turbo = panoramicSunroof;
