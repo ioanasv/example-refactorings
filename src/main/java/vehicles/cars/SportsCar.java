@@ -5,11 +5,11 @@ import main.java.vehicles.components.carComponents.EngineImpl;
 public class SportsCar extends Car{
 
 
-    private int noOfSeats;
+    private Integer noofseats;
 
-    public SportsCar(int noOfSeats, int maxSpeed, double currentSpeed, int seatHeight, String engine) {
+    public SportsCar(int noofseats, int maxSpeed, double currentSpeed, int seatHeight, String engine) {
         super(maxSpeed, currentSpeed, seatHeight, engine);
-        this.noOfSeats = noOfSeats;
+        this.noofseats = noofseats;
     }
 
     public void setEngine(String engine) {

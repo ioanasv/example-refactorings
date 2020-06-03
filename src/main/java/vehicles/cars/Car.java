@@ -45,4 +45,5 @@ public class Car extends Vehicle {
     public Speed getSpeed() {
         return speed;
     }
+
 }

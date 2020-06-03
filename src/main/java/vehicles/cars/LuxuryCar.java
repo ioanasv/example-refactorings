@@ -35,4 +35,12 @@ public class LuxuryCar extends Car {
     private void doubleSpeed() {
         this.getSpeed().setCurrentSpeed(this.getSpeed().getCurrentSpeed() * 2);
     }
+
+    public int getNoOfSeats() {
+        return noOfSeats;
+    }
+
+    public void setNoOfSeats(int noOfSeats) {
+        this.noOfSeats = noOfSeats;
+    }
 }
