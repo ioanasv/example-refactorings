@@ -4,7 +4,7 @@ import main.java.vehicles.components.carComponents.EngineImpl;
 
 public class LuxuryCar extends Car {
 
-    private int noofseats;
+    private boolean noofseats;
 
     public String toString() {
         final String string = getString();
@@ -20,7 +20,7 @@ public class LuxuryCar extends Car {
     }
 
     @SuppressWarnings("checkstyle:executablestatementcount")
-    public LuxuryCar(int maxSpeed, int noOfSeats, double currentSpeed,
+    public LuxuryCar(int maxSpeed, boolean noOfSeats, double currentSpeed,
                      int seatHeight, String engine, boolean panoramicSunroof) {
         super(maxSpeed, currentSpeed, seatHeight, engine);
         EngineImpl.turbo = panoramicSunroof;
@@ -36,11 +36,11 @@ public class LuxuryCar extends Car {
         this.getSpeed().setCurrentSpeed(this.getSpeed().getCurrentSpeed() * 2);
     }
 
-    public int getNoofseats() {
+    public boolean isNoofseats() {
         return noofseats;
     }
 
-    public void setNoofseats(int noofseats) {
+    public void setNoofseats(boolean noofseats) {
         this.noofseats = noofseats;
     }
 }
