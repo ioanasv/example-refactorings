@@ -1,6 +1,6 @@
 package main.java.vehicles.birds;
 
-public class NorwegianBlue extends Bird {
+public class NorwegianBlue extends Bird implements Eukaryota {
 
 
     public NorwegianBlue(String type, boolean isNailed) {

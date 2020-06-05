@@ -1,6 +1,6 @@
 package main.java.vehicles.birds;
 
-public abstract class Bird {
+public abstract class Bird extends Animalia {
 
     private String type;
     boolean isNailed;
@@ -15,9 +15,9 @@ public abstract class Bird {
 
     double getBaseSpeed() {
         return baseSpeed;
-   }
+    }
 
     double getLoadFactor() {
         return 1.3;
-   }
+    }
 }
