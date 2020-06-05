@@ -2,9 +2,12 @@ package main.java.vehicles.birds;
 
 public abstract class Bird extends Animalia {
 
-    final Speed speed = new Speed();
     private String type;
     boolean isNailed;
+    private double baseSpeed = 15.2;
+    private double maxSpeed = 50.5;
+    private String color;
+    private double weight;
 
     public Bird(String type, boolean isNailed) {
         this.type = type;
@@ -14,7 +17,7 @@ public abstract class Bird extends Animalia {
     public abstract double getSpeed();
 
     double getBaseSpeed() {
-        return speed.getBaseSpeed();
+        return baseSpeed;
     }
 
     double getLoadFactor() {
@@ -22,15 +25,31 @@ public abstract class Bird extends Animalia {
     }
 
     public double getMaxSpeed() {
-        return speed.getMaxSpeed();
+        return maxSpeed;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
     public void setMaxSpeed(double maxSpeed) {
-        speed.setMaxSpeed(maxSpeed);
+        this.maxSpeed = maxSpeed;
     }
 
     public void setBaseSpeed(double baseSpeed) {
-        speed.setBaseSpeed(baseSpeed);
+        this.baseSpeed = baseSpeed;
     }
 }
 

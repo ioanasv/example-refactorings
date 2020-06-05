@@ -10,6 +10,6 @@ public class African extends Bird implements Eukaryota {
 
     @Override
     public double getSpeed() {
-        return speed.getBaseSpeed() - getLoadFactor() * Calculator.numberOfCoconutss;
+        return getBaseSpeed() - getLoadFactor() * Calculator.numberOfCoconutss;
     }
 }
