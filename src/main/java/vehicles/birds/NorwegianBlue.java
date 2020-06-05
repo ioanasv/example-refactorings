@@ -9,6 +9,6 @@ public class NorwegianBlue extends Bird implements Eukaryota {
 
     @Override
     public double getSpeed() {
-        return (isNailed) ? 0 : getBaseSpeed();
+        return (isNailed) ? 0 : speed.getBaseSpeed();
     }
 }

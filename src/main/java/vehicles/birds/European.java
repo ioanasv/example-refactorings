@@ -8,6 +8,6 @@ public class European extends Bird implements Eukaryota {
 
     @Override
     public double getSpeed() {
-        return getBaseSpeed();
+        return speed.getBaseSpeed();
     }
 }
