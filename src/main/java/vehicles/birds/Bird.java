@@ -7,6 +7,8 @@ public abstract class Bird extends Animalia {
     private double baseSpeed = 15.2;
     private double maxSpeed = 50.5;
 
+    final double loadfactor = 1.3;
+
     public Bird(String type, boolean isNailed) {
         this.type = type;
         this.isNailed = isNailed;
@@ -19,15 +21,15 @@ public abstract class Bird extends Animalia {
     }
 
     double getLoadFactor() {
-        return 1.3;
+        return loadfactor;
     }
 
     double getLoadFactorx2() {
-        return 1.3 * 2;
+        return loadfactor * 2;
     }
 
     double getLoadFactorx3() {
-        return 1.3 * 2;
+        return loadfactor * 2;
     }
 
     public double getMaxSpeed() {
