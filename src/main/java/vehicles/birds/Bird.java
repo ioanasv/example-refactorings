@@ -26,6 +26,10 @@ public abstract class Bird extends Animalia {
         return 1.3 * 2;
     }
 
+    double getLoadFactorx3() {
+        return 1.3 * 2;
+    }
+
     public double getMaxSpeed() {
         return maxSpeed;
     }
