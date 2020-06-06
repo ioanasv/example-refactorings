@@ -5,6 +5,7 @@ public class EngineImpl implements Engine{
 
     public static String engine;
     public static boolean turbo;
+    @Deprecated
     private String name;
 
     public EngineImpl(String name) {
