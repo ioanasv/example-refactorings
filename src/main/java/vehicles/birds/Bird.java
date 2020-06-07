@@ -1,15 +1,17 @@
 package main.java.vehicles.birds;
 
+import java.util.List;
+
 public abstract class Bird extends Animalia {
 
-    private String type;
+    private List<String> type;
     boolean isNailed;
     private double baseSpeed = 15.2;
     private double maxSpeed = 50.5;
 
     final double loadfactor = 1.3;
 
-    public Bird(String type, boolean isNailed) {
+    public Bird(List<String> type, boolean isNailed) {
         this.type = type;
         this.isNailed = isNailed;
     }

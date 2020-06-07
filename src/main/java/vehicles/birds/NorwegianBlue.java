@@ -1,9 +1,11 @@
 package main.java.vehicles.birds;
 
+import java.util.List;
+
 public class NorwegianBlue extends Bird implements Eukaryota {
 
 
-    public NorwegianBlue(String type, boolean isNailed) {
+    public NorwegianBlue(List<String> type, boolean isNailed) {
         super(type, isNailed);
     }
 

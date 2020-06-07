@@ -2,9 +2,11 @@ package main.java.vehicles.birds;
 
 import main.java.vehicles.components.Calculator;
 
+import java.util.List;
+
 public class African extends Bird implements Eukaryota {
 
-    public African(String type, boolean isNailed) {
+    public African(List<String> type, boolean isNailed) {
         super(type, isNailed);
     }
 
