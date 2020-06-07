@@ -1,4 +1,4 @@
-package main.java.vehicles.birds;
+package main.java.vehicles.birds.impl;
 
 public class PhysicalApperance {
     private String color;

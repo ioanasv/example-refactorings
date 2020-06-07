@@ -1,8 +1,10 @@
-package main.java.vehicles.birds;
+package main.java.vehicles.birds.impl;
+
+import main.java.vehicles.birds.impl.objects.BirdObject;
 
 import java.util.List;
 
-public class NorwegianBlue extends Bird implements Eukaryota {
+public class NorwegianBlue extends BirdObject implements Eukaryota {
 
 
     public NorwegianBlue(List<String> type, boolean isNailed) {

@@ -14,4 +14,5 @@ public class Calculator {
     public static int incrementWithA(int x, int a) {
         return x + a;
     }
+
 }

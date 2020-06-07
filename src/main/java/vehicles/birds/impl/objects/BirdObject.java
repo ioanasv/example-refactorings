@@ -1,36 +1,38 @@
-package main.java.vehicles.birds;
+package main.java.vehicles.birds.impl.objects;
+
+import main.java.vehicles.birds.impl.Animalia;
 
 import java.util.List;
 
-public abstract class Bird extends Animalia {
+public abstract class BirdObject extends Animalia {
 
     private List<String> type;
-    boolean isNailed;
+    public boolean isNailed;
     private double baseSpeed = 15.2;
     private double maxSpeed = 50.5;
 
     final double loadfactor = 1.3;
 
-    public Bird(List<String> type, boolean isNailed) {
+    public BirdObject(List<String> type, boolean isNailed) {
         this.type = type;
         this.isNailed = isNailed;
     }
 
     public abstract double getSpeed();
 
-    double getBaseSpeed() {
+    public double getBaseSpeed() {
         return baseSpeed;
     }
 
-    double getLoadFactor() {
+    public double getLoadFactor() {
         return loadfactor;
     }
 
-    double getLoadFactorx2() {
+    public double getLoadFactorx2() {
         return loadfactor * 2;
     }
 
-    double getLoadFactorx3() {
+    public double getLoadFactorx3() {
         return loadfactor * 2;
     }
 
