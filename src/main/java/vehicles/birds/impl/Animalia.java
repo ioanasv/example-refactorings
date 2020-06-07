@@ -1,5 +1,5 @@
 package main.java.vehicles.birds.impl;
 
-@Deprecated
+@SuppressWarnings("checkstyle:executablestatementcount")
 public abstract class Animalia {
 }
