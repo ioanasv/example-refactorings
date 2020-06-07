@@ -40,7 +40,7 @@ public class LuxuryCar extends Car {
         return noofseats;
     }
 
-    public void setNoofseats(int notimportant1, String noofseats) {
+    public void setNoofseats(String noofseats, int notimportant1, double notimportant2) {
         this.noofseats = noofseats;
     }
 }
