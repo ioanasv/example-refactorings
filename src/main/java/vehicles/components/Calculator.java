@@ -8,6 +8,11 @@ public class Calculator {
 
     public static Integer doCalculations() {
         temp = EngineImpl.getInteger();
-        return temp;
+        return incrementWithA(temp, 2);
     }
+
+    public static int incrementWithA(int x, int a) {
+        return x + a;
+    }
+
 }

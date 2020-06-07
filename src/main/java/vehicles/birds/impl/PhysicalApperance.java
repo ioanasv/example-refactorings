@@ -1,6 +1,7 @@
-package main.java.vehicles.birds;
+package main.java.vehicles.birds.impl;
 
-public class PhysicalApperance {
+@Deprecated
+public abstract class PhysicalApperance {
     private String color;
     private double weight;
 
