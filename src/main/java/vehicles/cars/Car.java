@@ -7,6 +7,7 @@ public class Car extends Vehicle {
 
     private final Speed speed = new Speed();
 
+
     public double getCurrentSpeed() {
         return getSpeed().getCurrentSpeed();
     }
@@ -26,6 +27,7 @@ public class Car extends Vehicle {
     private int seatHeight;
 
 
+    @Deprecated
     public Car(int maxPossibleSpeed, double currentSpeed, int seatHeight, String engine) {
         initializeSpeeds(maxPossibleSpeed, currentSpeed);
         this.seatHeight = seatHeight;
