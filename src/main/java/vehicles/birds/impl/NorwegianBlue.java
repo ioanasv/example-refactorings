@@ -4,6 +4,14 @@ import main.java.vehicles.birds.impl.objects.BirdObject;
 
 import java.util.List;
 
+/**
+ *
+ *
+ *
+ *
+ *
+ * Javadoc.
+ */
 public class NorwegianBlue extends BirdObject implements Eukaryota {
 
 
