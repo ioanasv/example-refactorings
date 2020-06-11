@@ -12,10 +12,10 @@ import java.util.List;
  *
  * Javadoc.
  */
-public class NorwegianBlue extends BirdObject implements Eukaryota {
+public class NorwegianBlueBird extends BirdObject implements Eukaryota {
 
 
-    public NorwegianBlue(List<String> type, boolean isNailed) {
+    public NorwegianBlueBird(List<String> type, boolean isNailed) {
         super(type, isNailed);
     }
 
