@@ -6,10 +6,9 @@ import java.util.List;
 
 public abstract class BirdObject extends Animalia {
 
+    private final Speed speed = new Speed();
     private List<String> type;
     public boolean isNailed;
-    private double baseSpeed = 15.2;
-    private double maxSpeed = 50.5;
 
     final double loadfactor = 1.3;
 
@@ -21,7 +20,7 @@ public abstract class BirdObject extends Animalia {
     public abstract double getSpeed();
 
     public double getBaseSpeed() {
-        return baseSpeed;
+        return speed.getBaseSpeed();
     }
 
     public double getLoadFactor() {
@@ -37,15 +36,15 @@ public abstract class BirdObject extends Animalia {
     }
 
     public double getMaxSpeed() {
-        return maxSpeed;
+        return speed.getMaxSpeed();
     }
 
     public void setMaxSpeed(double maxSpeed) {
-        this.maxSpeed = maxSpeed;
+        speed.setMaxSpeed(maxSpeed);
     }
 
     public void setBaseSpeed(double baseSpeed) {
-        this.baseSpeed = baseSpeed;
+        speed.setBaseSpeed(baseSpeed);
     }
 }
 

@@ -12,6 +12,6 @@ public class European extends BirdObject implements Eukaryota {
 
     @Override
     public double getSpeed() {
-        return getBaseSpeed();
+        return speed.getBaseSpeed();
     }
 }
