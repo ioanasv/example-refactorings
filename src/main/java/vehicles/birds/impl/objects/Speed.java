@@ -1,8 +1,6 @@
 package main.java.vehicles.birds.impl.objects;
 
 /**
- *
- *
  * This is a Javadoc.
  */
 public class Speed {

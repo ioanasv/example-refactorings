@@ -23,4 +23,12 @@ public class NorwegianBlueBird extends BirdObject implements Eukaryota {
     public double getSpeed() {
         return (isNailed) ? 0 : speed.getBaseSpeed();
     }
+
+    /**
+     * Javadoc.
+     * @return 2 * loadfactor
+     */
+    public double getLoadFactorx2() {
+        return loadfactor * 2;
+    }
 }

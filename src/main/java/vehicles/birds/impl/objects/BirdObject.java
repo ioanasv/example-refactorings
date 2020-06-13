@@ -6,11 +6,11 @@ import java.util.List;
 
 public abstract class BirdObject extends Animalia {
 
-    private final Speed speed = new Speed();
+    public final Speed speed = new Speed();
     private List<String> type;
     public boolean isNailed;
 
-    final double loadfactor = 1.3;
+    public final double loadfactor = 1.3;
 
     public BirdObject(List<String> type, boolean isNailed) {
         this.type = type;
@@ -25,10 +25,6 @@ public abstract class BirdObject extends Animalia {
 
     public double getLoadFactor() {
         return loadfactor;
-    }
-
-    public double getLoadFactorx2() {
-        return loadfactor * 2;
     }
 
     public double getLoadFactorx3() {

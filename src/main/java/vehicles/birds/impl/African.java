@@ -15,4 +15,12 @@ public class African extends BirdObject implements Eukaryota {
     public double getSpeed() {
         return speed.getBaseSpeed() - getLoadFactor() * Calculator.numberOfCoconutss;
     }
+
+    /**
+     * Javadoc.
+     * @return 2 * loadfactor
+     */
+    public double getLoadFactorx2() {
+        return loadfactor * 2;
+    }
 }
