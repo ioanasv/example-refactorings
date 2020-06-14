@@ -44,7 +44,7 @@ public abstract class Bird extends Animalia {
     }
 }
 
-class MyInnerClass {
+class MyInnerClasss {
 
 }
 
