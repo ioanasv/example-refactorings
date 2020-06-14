@@ -4,7 +4,7 @@ import main.java.vehicles.birds.impl.Animalia;
 
 import java.util.List;
 
-public abstract class Bird extends Animalia {
+public abstract class BirdObject extends Animalia {
 
     public final Speed speed = new Speed();
     private List<String> type;
@@ -12,7 +12,7 @@ public abstract class Bird extends Animalia {
 
     public final double loadfactor = 1.3;
 
-    public Bird(List<String> type, boolean isNailed) {
+    public BirdObject(List<String> type, boolean isNailed) {
         this.type = type;
         this.isNailed = isNailed;
     }
