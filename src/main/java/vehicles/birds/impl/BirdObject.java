@@ -28,7 +28,8 @@ public abstract class BirdObject extends Animalia {
         return loadfactor;
     }
 
-    public double getLoadFactorx3() {
+    @Deprecated
+    public double getLoadFactorx5() {
         return loadfactor * 2;
     }
 
