@@ -45,7 +45,3 @@ public abstract class BirdObject extends Animalia {
     }
 }
 
-class MyInnerClasss {
-
-}
-
