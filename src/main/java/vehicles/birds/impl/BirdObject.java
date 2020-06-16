@@ -30,8 +30,16 @@ public abstract class BirdObject extends Animalia {
         return loadfactor;
     }
 
+    /**
+     *
+     *
+     *
+     *
+     * javadoc
+     * @return double
+     */
     @Deprecated
-    @SuppressWarnings("checkstyle2") @Transient
+    @SuppressWarnings("checkstyle2")
     @Generated("") public double getLoadFactorx9() {
         return loadfactor * 2;
     }
