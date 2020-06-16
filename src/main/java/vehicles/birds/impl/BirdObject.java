@@ -32,8 +32,7 @@ public abstract class BirdObject extends Animalia {
 
     @Deprecated
     @SuppressWarnings("checkstyle2") @Transient
-    @Generated("")
-    public double getLoadFactorx6() {
+    @Generated("") public double getLoadFactorx9() {
         return loadfactor * 2;
     }
 
