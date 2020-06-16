@@ -1,6 +1,5 @@
 package main.java.vehicles.birds.impl;
 
-import main.java.vehicles.birds.impl.objects.BirdObject;
 import main.java.vehicles.components.Calculator;
 
 import java.util.List;

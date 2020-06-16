@@ -1,6 +1,7 @@
-package main.java.vehicles.birds.impl.objects;
+package main.java.vehicles.birds.impl;
 
 import main.java.vehicles.birds.impl.Animalia;
+import main.java.vehicles.birds.impl.objects.Speed;
 
 import java.util.List;
 
