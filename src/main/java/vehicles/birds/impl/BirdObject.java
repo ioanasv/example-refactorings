@@ -3,6 +3,8 @@ package main.java.vehicles.birds.impl;
 import main.java.vehicles.birds.impl.Animalia;
 import main.java.vehicles.birds.impl.objects.Speed;
 
+import javax.annotation.processing.Generated;
+import java.beans.Transient;
 import java.util.List;
 
 public abstract class BirdObject extends Animalia {
@@ -29,7 +31,9 @@ public abstract class BirdObject extends Animalia {
     }
 
     @Deprecated
-    public double getLoadFactorx5() {
+    @SuppressWarnings("checkstyle2") @Transient
+    @Generated("")
+    public double getLoadFactorx6() {
         return loadfactor * 2;
     }
 
