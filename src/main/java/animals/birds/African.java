@@ -1,13 +1,19 @@
 package main.java.animals.birds;
 
 import main.java.animals.Eukaryota;
-import main.java.components.Calculator;
 
-import java.util.List;
+public class African implements Eukaryota {
 
-public class African extends TalkingBird implements Eukaryota {
+    int noOfColors = 10;
 
     public African() {
     }
 
+    public static void europeanBird() {
+        System.out.println("Hello! I am an European Bird.");
+    }
+
+    public String generalSalute() {
+        return "Hello! I am a bird.";
+    }
 }
