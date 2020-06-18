@@ -1,10 +1,9 @@
-package main.java.vehicles.birds.impl;
+package main.java.animals.birds;
 
-import main.java.vehicles.birds.impl.Animalia;
-import main.java.vehicles.birds.impl.objects.Speed;
+import main.java.animals.Animalia;
+import main.java.animals.birds.utils.Speed;
 
 import javax.annotation.processing.Generated;
-import java.beans.Transient;
 import java.util.List;
 
 public abstract class BirdObject extends Animalia {
@@ -20,7 +19,9 @@ public abstract class BirdObject extends Animalia {
         this.isNailed = isNailed;
     }
 
-    public abstract double getSpeed();
+    public double getSpeed() {
+        return speed.getBaseSpeed();
+    }
 
     public double getBaseSpeed() {
         return speed.getBaseSpeed();
@@ -31,16 +32,14 @@ public abstract class BirdObject extends Animalia {
     }
 
     /**
-     *
-     *
-     *
-     *
      * javadoc
+     *
      * @return double
      */
     @Deprecated
     @SuppressWarnings("checkstyle2")
-    @Generated("") public double getLoadFactorx9() {
+    @Generated("")
+    public double getLoadFactorx9() {
         return loadfactor * 2;
     }
 
@@ -54,6 +53,15 @@ public abstract class BirdObject extends Animalia {
 
     public void setBaseSpeed(double baseSpeed) {
         speed.setBaseSpeed(baseSpeed);
+    }
+
+    /**
+     * Javadoc.
+     *
+     * @return 2 * loadfactor
+     */
+    public double getLoadFactorx2() {
+        return loadfactor * 2;
     }
 }
 

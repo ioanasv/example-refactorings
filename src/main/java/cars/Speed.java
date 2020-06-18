@@ -1,4 +1,4 @@
-package main.java.vehicles.cars;
+package main.java.cars;
 
 public class Speed {
     int maxPossibleSpeed;

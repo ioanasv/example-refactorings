@@ -1,4 +1,4 @@
-package main.java.vehicles.birds.impl;
+package main.java.animals.birds.utils;
 
 @Deprecated
 public abstract class PhysicalApperance {

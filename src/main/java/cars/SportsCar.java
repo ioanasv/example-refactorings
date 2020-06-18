@@ -1,6 +1,6 @@
-package main.java.vehicles.cars;
+package main.java.cars;
 
-import main.java.vehicles.components.carComponents.EngineImpl;
+import main.java.components.carComponents.EngineImpl;
 
 public class SportsCar extends Car{
 

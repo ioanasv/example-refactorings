@@ -1,4 +1,4 @@
-package main.java.vehicles.birds.impl.objects;
+package main.java.animals.birds.utils;
 
 /**
  * This is a Javadoc.

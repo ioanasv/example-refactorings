@@ -1,4 +1,4 @@
-package main.java.vehicles.components;
+package main.java.components;
 
 public class Result {
     static boolean abc;

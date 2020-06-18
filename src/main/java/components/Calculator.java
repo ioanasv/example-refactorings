@@ -1,6 +1,6 @@
-package main.java.vehicles.components;
+package main.java.components;
 
-import main.java.vehicles.components.carComponents.EngineImpl;
+import main.java.components.carComponents.EngineImpl;
 
 public class Calculator {
     public static int numberOfCoconutss = 10;
