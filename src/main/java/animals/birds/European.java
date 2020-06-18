@@ -4,7 +4,7 @@ import main.java.animals.Eukaryota;
 
 import java.util.List;
 
-public class European  implements Eukaryota {
+public class European extends TalkingBird implements Eukaryota {
 
     int noOfColors = 10;
 
@@ -16,6 +16,6 @@ public class European  implements Eukaryota {
     }
 
     public String generalSalute() {
-        return "Hello! I am a bird.";
+        return super.generalSalute();
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Javadoc.
  */
-public class NorwegianBlueBird implements Eukaryota {
+public class NorwegianBlueBird extends TalkingBird implements Eukaryota {
 
     List<String> type;
     boolean isNailed;
@@ -27,6 +27,6 @@ public class NorwegianBlueBird implements Eukaryota {
     }
 
     public String generalSalute() {
-        return "Hello! I am a bird.";
+        return super.generalSalute();
     }
 }
