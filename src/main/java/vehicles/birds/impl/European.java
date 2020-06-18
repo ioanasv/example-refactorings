@@ -15,9 +15,14 @@ public class European extends BirdObject implements Eukaryota {
 
     /**
      * Javadoc.
+     *
      * @return 2 * loadfactor
      */
     public double getLoadFactorx2() {
         return loadfactor * 2;
+    }
+
+    public static void europeanBird() {
+        System.out.println("Hello! I am an European Bird.");
     }
 }

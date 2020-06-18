@@ -3,11 +3,6 @@ package main.java.vehicles.birds.impl;
 import java.util.List;
 
 /**
- *
- *
- *
- *
- *
  * Javadoc.
  */
 public class NorwegianBlueBird extends BirdObject implements Eukaryota {
@@ -24,9 +19,18 @@ public class NorwegianBlueBird extends BirdObject implements Eukaryota {
 
     /**
      * Javadoc.
+     *
      * @return 2 * loadfactor
      */
     public double getLoadFactorx2() {
         return loadfactor * 2;
+    }
+
+    public String salute() {
+        return "Hello! I am a Norvewgian Blue Bird.";
+    }
+
+    public String generalSalute() {
+        return "Hello! I am a bird.";
     }
 }

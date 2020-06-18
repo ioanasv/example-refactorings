@@ -6,6 +6,8 @@ import java.util.List;
 
 public class African extends BirdObject implements Eukaryota {
 
+    int noOfColors = 10;
+
     public African(List<String> type, boolean isNailed) {
         super(type, isNailed);
     }
@@ -16,7 +18,8 @@ public class African extends BirdObject implements Eukaryota {
     }
 
     /**
-     * Javadoc.
+     * This is a Javadoc.
+     *
      * @return 2 * loadfactor
      */
     public double getLoadFactorx2() {
