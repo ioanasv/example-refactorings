@@ -1,4 +1,4 @@
-enum CarType {
+enum VerhicleType {
     SEDAN,
     PICKUP,
     STATION,
