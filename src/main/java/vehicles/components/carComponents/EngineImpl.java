@@ -18,12 +18,6 @@ public class EngineImpl implements Engine{
         this.name = name;
     }
 
-    public static Integer getInteger() {
-        Integer temp = 10;
-        temp *= 3;
-        return temp;
-    }
-
     public String getName() {
         return name;
     }
